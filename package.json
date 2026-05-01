@@ -15,7 +15,8 @@
     "packages/*"
   ],
   "dependencies": {
-    "cors": "^2.8.6"
+    "cors": "^2.8.6",
+    "mongoose": "^9.6.1"
   },
   "devDependencies": {
     "concurrently": "^9.2.1"
