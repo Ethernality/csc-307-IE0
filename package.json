@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm --workspace=express-backend start"
+    "start": "concurrently \"npm --workspace=express-backend start\" \"npm --workspace=react-frontend start\""
   },
   "private": true,
   "workspaces": [
@@ -16,5 +16,8 @@
   ],
   "dependencies": {
     "cors": "^2.8.6"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
   }
 }
